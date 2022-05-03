@@ -1,0 +1,45 @@
+{
+  "dependencies": {
+    "@hapi/boom": "^10.0.0",
+    "@truffle/contract": "^4.3.19",
+    "bcrypt": "^5.0.1",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "ipfs-api": "^26.1.2",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.3.2",
+    "nodemon": "^2.0.16",
+    "shortid": "^2.2.16",
+    "swagger-jsdoc": "^6.2.1",
+    "swagger-ui-express": "^4.3.0",
+    "web3": "^1.7.3"
+  },
+  "name": "api-ether-example",
+  "version": "1.0.0",
+  "description": "Example etherum integration API-Rest",
+  "main": "index.js",
+  "scripts": {
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "start:dev": "nodemon index",
+    "start:prod": "eslint . && node index"
+  },
+  "keywords": [
+    "web3",
+    "eth",
+    "etherum",
+    "nodejs"
+  ],
+  "author": "maldos23",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.6.2"
+  }
+}
