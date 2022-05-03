@@ -1,7 +1,7 @@
 const router = require("express").Router();
+//Controller
+const { accessController } = require("./controller");
 
-router.get("/:email/:id", (req, res) => {
-  res.json({ success: true });
-});
+router.get("/", accessController);
 
 module.exports = router;

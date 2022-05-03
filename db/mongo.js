@@ -20,7 +20,6 @@ db.on("connecting", () => {
 
 db.on("connected", () => {
   clearInterval(loader);
-  console.clear();
   console.log(`\n MongoDb is connected  ✅ \n`);
 });
 

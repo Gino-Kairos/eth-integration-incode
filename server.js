@@ -1,3 +1,5 @@
+/* Local variables*/
+require("dotenv").config();
 //Dependencies
 const express = require("express");
 const routes = require("./routes");
