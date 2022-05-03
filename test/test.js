@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const IPFSInbox = artifacts.require("./Inbox.sol");
 
 contract("IPFSInbox", (accounts) => {
