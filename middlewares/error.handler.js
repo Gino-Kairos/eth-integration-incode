@@ -1,7 +1,4 @@
-function logErrors(err, req, res, next) {
-  next(err);
-}
-
+const Sentry = require("@sentry/node");
 // eslint-disable-next-line no-unused-vars
 function errorHandler(err, req, res, next) {
   res.status(500).json({
@@ -19,4 +16,9 @@ function boomErrorHandler(err, req, res, next) {
   next(err);
 }
 
-module.exports = { logErrors, errorHandler, boomErrorHandler };
+function middleHandler(err, req, res, next) {
+  Sentry.captureException(err);
+  next(err);
+}
+
+module.exports = { errorHandler, boomErrorHandler, middleHandler };

@@ -8,7 +8,7 @@ contract("IPFSInbox", (accounts) => {
 
     //set a variable to false and get event listener
     eventEmitted = false;
-    //var event = ()
+    // eslint-disable-next-line no-unused-vars
     await ipfsInbox.ipfsSent((err, res) => {
       eventEmitted = true;
     });

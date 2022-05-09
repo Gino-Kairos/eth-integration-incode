@@ -16,7 +16,7 @@ async function registerController(req, res, next) {
       ...req.body,
     });
     if (isValidRequest) {
-      const { email, password } = req.body;
+      const { email, password } = isValidRequest;
       const emailExist = await Users.findOne({ email });
 
       if (!emailExist) {
@@ -42,7 +42,7 @@ async function loginController(req, res, next) {
       ...req.body,
     });
     if (isValidRequest) {
-      const { email, password } = req.body;
+      const { email, password } = isValidRequest;
       const getUser = await Users.findOne({ email });
 
       if (getUser) {

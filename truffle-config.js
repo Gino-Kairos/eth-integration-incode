@@ -1,4 +1,12 @@
+//Dependecies
 const path = require("path");
+
+/* 
+
+  truffle configuration can be found at: 
+  https://trufflesuite.com/docs/truffle/reference/configuration/
+
+*/
 
 module.exports = {
   contracts_build_directory: path.join(__dirname, "/build"),
