@@ -26,7 +26,7 @@ app.use(express.json());
 
 //Sentry init
 Sentry.init({
-  dsn: process.env.SENTRY_PROJECT,
+  dsn: process.env.SENTRY_PROJECT || null,
   integrations: [
     // enable HTTP calls tracing
     new Sentry.Integrations.Http({ tracing: true }),
